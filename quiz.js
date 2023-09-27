@@ -1,4 +1,4 @@
-// Define your questions array here...
+
 var questions = [
     {
         question: "What does HTML stand for?",
