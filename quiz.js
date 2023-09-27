@@ -14,7 +14,12 @@ var questions = [
         question: "The condition in an if / else statement is enclosed within ____.",
         choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
         answer: "parentheses",
-    }
+    },
+    {
+        question: "Every HTML page must include a reference to the external file sheet file inside the ____ element.",
+        choices: ["<div>", "body", "link", "header",],
+        answer: "link",
+    },
 ];
 
 // Variables
@@ -44,7 +49,6 @@ function startQuiz() {
     displayQuestion(currentQuestionIndex);
 }
 
-// Function to handle quiz completion
 // Function to handle quiz completion
 function handleQuizCompletion() {
     const questionContainer = document.getElementById('question-container');
