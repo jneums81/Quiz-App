@@ -11,6 +11,6 @@ This application is a coding quiz consisting of 4 questions. After you take the 
 ![Alt text](<Screen Shot 2023-09-26 at 10.15.18 PM.png>)
 ![Alt text](<Screen Shot 2023-09-26 at 10.15.27 PM.png>)
 ![Alt text](<Screen Shot 2023-09-26 at 10.15.35 PM.png>)
-https://jneums81.github.io/Quiz-App/
 
 ## Deployed Website
+https://jneums81.github.io/Quiz-App/
