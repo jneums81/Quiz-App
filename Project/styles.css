@@ -33,21 +33,35 @@ main {
     margin-top: 20px;
 }
 
+/* Button styles */
 button {
-    display: block;
-    margin: 10px 0;
-    padding: 10px 20px;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
     background-color: #007acc;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
     background-color: #005faa;
+    transform: scale(1.05); /* Add a slight scaling effect on hover */
 }
+
+/* Additional button styles (for secondary buttons, if needed) */
+.secondary-button {
+    background-color: #ccc;
+    color: #333;
+}
+
+.secondary-button:hover {
+    background-color: #999;
+    color: #fff;
+}
+
 
 /* Timer styles */
 #timer {

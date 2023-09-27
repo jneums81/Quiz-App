@@ -45,6 +45,7 @@ function startQuiz() {
 }
 
 // Function to handle quiz completion
+// Function to handle quiz completion
 function handleQuizCompletion() {
     const questionContainer = document.getElementById('question-container');
     questionContainer.innerHTML = '';
@@ -58,16 +59,22 @@ function handleQuizCompletion() {
     initialsForm.addEventListener('submit', function (event) {
         event.preventDefault();
         const userInitials = initialsInput.value;
-        // Save user's score and initials to local storage
-        const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
-        highScores.push({ initials: userInitials, score: score });
-        localStorage.setItem('highScores', JSON.stringify(highScores));
-        // Redirect to high scores page
-        window.location.href = 'highscores.html'; // Change this to the correct path of your highscores.html
+        if (userInitials.trim() === '') {
+            // Show an error message for empty initials
+            feedbackElement.textContent = 'Please enter your initials.';
+        } else {
+            // Save user's score and initials to local storage
+            const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+            highScores.push({ initials: userInitials, score: score });
+            localStorage.setItem('highScores', JSON.stringify(highScores));
+            // Redirect to high scores page
+            window.location.href = 'highscores.html'; // Change this to the correct path of your highscores.html
+        }
     });
 
     finalScoreElement.textContent = `Your score: ${score}`;
 }
+
 
 
 // Function to display a question
