@@ -46,20 +46,35 @@ function startQuiz() {
 
 // Function to handle quiz completion
 function handleQuizCompletion() {
-  // Clear the question container
-  const questionContainer = document.getElementById('question-container');
-  questionContainer.innerHTML = '';
-
-  // Display a message to the user
-  if (timer <= 0) {
-    feedbackElement.textContent = 'Time is up!';
-  } else {
-    feedbackElement.textContent = 'Quiz completed!';
+    // ... (previous code)
+  
+    // Allow user input for initials and save data to local storage
+    const initialsForm = document.getElementById('initials-form');
+    const initialsInput = document.getElementById('initials');
+  
+    // Show the initials form to the user
+    initialsForm.style.display = 'block';
+  
+    // Handle form submission
+    initialsForm.addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent the form from submitting the traditional way
+  
+      const userInitials = initialsInput.value.trim(); // Get and clean the user's initials
+  
+      if (userInitials !== '') {
+        // Save the user's score and initials to local storage
+        saveHighScore(userInitials, score);
+  
+        // Redirect to the high scores page (You can implement this)
+        // For example, you can use window.location.href to redirect:
+        // window.location.href = 'highscores.html';
+      } else {
+        // Provide feedback to the user that initials are required
+        // You can display an error message or add a CSS class to style it
+      }
+    });
   }
-
-  // Allow user input for initials and save data to local storage
-  // Redirect to high scores page
-}
+  
 
 // Function to display a question
 function displayQuestion(index) {
