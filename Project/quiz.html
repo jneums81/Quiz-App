@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz</title>
-    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header>
@@ -13,28 +12,16 @@
     </header>
 
     <main>
-        <div id="question-container">
-            <!-- Questions and answer choices will be dynamically added here -->
-        </div>
-
-        <div id="feedback">
-            <!-- Feedback for the user (correct/incorrect) will be displayed here -->
-        </div>
-
-        <div id="timer">
-            Time: 60 <!-- Initial timer value -->
-        </div>
-
-        <!-- User input for initials and score display will go here -->
+        <div id="question-container"></div>
+        <div id="feedback"></div>
+        <div id="timer">Time: 60</div>
         
         <form id="initials-form">
             <label for="initials">Enter your initials:</label>
             <input type="text" id="initials" name="initials" required>
             <button type="submit">Submit</button>
         </form>
-        <div id="score-display">
-            Your score: <span id="final-score">0</span>
-        </div>
+        <div id="score-display">Your score: <span id="final-score">0</span></div>
         
     </main>
 
@@ -42,7 +29,7 @@
         <button id="start-button">Start Quiz</button>
     </footer>
 
-    <script src="quiz.js"></script> <!-- Link to your updated JavaScript file -->
+    <script src="quiz.js"></script>
 </body>
 </html>
 

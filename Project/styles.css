@@ -69,6 +69,30 @@ button:hover {
     border-radius: 5px;
 }
 
+/* Form styles */
+#initials-form {
+    text-align: center;
+}
+
+#initials {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#initials:focus {
+    outline: none;
+    border-color: #007acc;
+}
+
+/* Score display styles */
+#score-display {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
 footer {
     text-align: center;
     margin-top: 20px;
@@ -83,3 +107,4 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
